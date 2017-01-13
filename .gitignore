@@ -1,0 +1,7 @@
+.nyc_output
+coverage
+doc
+npm-debug.log*
+node_modules
+.codio
+sample.swf

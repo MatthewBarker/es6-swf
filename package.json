@@ -1,0 +1,36 @@
+{
+  "name": "Writing",
+  "version": "1.0.0",
+  "description": "Creating SWF test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint \"source/**/*.js\" --fix",
+    "doc": "jsdoc source/**/*.js -d doc -c jsdoc.json",
+    "test": "tape \"tests/**/*.js\" | tap-spec",
+    "coverage": "nyc tape \"tests/**/*.js\"",
+    "report": "npm run coverage && nyc report --reporter=html --root ./source"
+  },
+  "keywords": [
+    "SWF",
+    "write"
+  ],
+  "author": "Matt Barker",
+  "dependencies": {
+    "bezier-js": "^2.2.2",
+    "bit-converter": "git+https://git@github.com/MatthewBarker/bit-converter.git",
+    "bit-stream": "git+https://git@github.com/MatthewBarker/bit-stream.git",
+    "memory-streams": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.6.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0",
+    "jsdoc": "^3.4.1",
+    "nyc": "^10.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0"
+  }
+}

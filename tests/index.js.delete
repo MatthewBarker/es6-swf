@@ -1,0 +1,16 @@
+require('./file/file-header.test');
+require('./file/flash.test');
+
+require('./records/argb.test');
+require('./records/rectangle.test');
+require('./records/rgb.test');
+require('./records/rgba.test');
+
+require('./structures/end-shape-record.test');
+require('./structures/fill-style-array.test');
+require('./structures/line-style-array.test');
+require('./structures/line-style.test');
+require('./structures/record-header-long.test');
+require('./structures/record-header-short.test');
+
+require('./tags/set-background-color.test');
